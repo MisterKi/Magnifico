@@ -1,18 +1,7 @@
-/* =============
-  Colors  Group
-============= */
-/* =============
-  HTML Elements
-============= */
-/* ========
-  Elements
-======== */
-/* ==========
-  Compoments
-========== */
 @-ms-viewport {
   width: device-width;
 }
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -2063,5 +2052,18 @@ img {
   display: inline-block;
 }
 img.circle {
-  border-radius: 100%;
+          border-radius: 100%;
+
+     -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+}
+img.rounded {
+          border-radius: 5px;
+
+     -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+img.thumb {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
 }

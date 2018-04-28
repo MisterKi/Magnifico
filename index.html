@@ -8,19 +8,156 @@
     <link rel="stylesheet" href="dist/css/magnifico.css">
   </head>
   <body>
-    <div class="row">
-      <div class="medium-col-3 text-center" style="background-color: #22313F; border: 1px solid #F03434">
-        <p style="color: #fff">Column</p>
+    <div class="container">
+      <div class="row">
+        <div class="medium-col-3">
+          <img src="images/matthew.png" style="width: 220px; margin-top: 13.4px " class="circle">
+        </div>
+        <div class="medium-col-7">
+          <h1>Magnifico</h1>
+          <p>Url: <a href="#" target="_blank">https://www.magnifico.io</a></p>
+          <p>
+            <span>Description:</span><br>
+            <strong>Magnifico</strong> is a beautiful css & javascript framework.
+          </p>
+          <p>
+            <span>Developer informations:</span><br>
+            Name: <strong>Irah Jacques Kouadio</strong><br>
+            Email: <a href="mailto:kouadioirah00@gmail.com">kouadioirah00@gmail.com</a>
+          </p>
+          <p>
+            <span class="badge primary">SCSS</span>
+            <span class="badge primary">CSS</span>
+            <span class="badge primary">JavaScript</span>
+          </p>
+        </div>
+        <div class="medium-col-2">
+          <p style="margin-top: calc(105.9px - .5rem)"><a href="https://github.com/MisterKi/Magnifico" class="button dark is-block" target="_blank">GitHub depot</a></p>
+        </div>
+      </div><hr>
+      <ul style="list-style-type: circle; margin-bottom: 30px">
+        <li><a href="#elements">Elements</a></li>
+        <ul>
+          <li><a href="#typography">Typography</a></li>
+          <li><a href="#buttons">Buttons</a></li>
+          <li><a href="#badges">Badges</a></li>
+          <li><a href="#text">Text</a></li>
+          <li><a href="#images">Images</a></li>
+        </ul>
+        <li><a href="#components">Components</a></li>
+        <ul>
+          <li><a href="#grid_system">Grid system</a></li>
+        </ul>
+      </ul>
+      <h2 id="elements" style="margin-bottom: 30px">Elements</h2>
+      <h3 id="typography" style="margin-bottom: 20px"># Typography</h>
+      <h5 style="margin-bottom: 10px">Heading</h5>
+      <h1>Headings Are Important</h1>
+      <h2>Headings Are Important</h>
+      <h3>Headings Are Important</h3>
+      <h4>Headings Are Important</h4>
+      <h5>Headings Are Important</h5>
+      <h6>Headings Are Important</h6>
+      <h5 style="margin-bottom: calc(20px - .5rem); margin-top: 30px">Paragraph</h5>
+      <p>Paragraphs Are Not More Important</p>
+      <h5 style="margin-top: 30px">Horizontal rule</h5>
+      <hr>
+      <h3 id="buttons" style="margin-top: 40px"># Buttons</h3>
+      <p style="margin-bottom: 20px">
+        <a href="#" class="button">Default</a>
+        <a href="#" class="button primary">Primary</a>
+        <a href="#" class="button secondary">Secondary</a>
+        <a href="#" class="button info">Info</a>
+        <a href="#" class="button success">Success</a>
+        <a href="#" class="button warning">Warning</a>
+        <a href="#" class="button dark">Dark</a>
+        <a href="#" class="button pink">Pink</a>
+        <a href="#" class="button purple">Purple</a>
+        <a href="#" class="button orange">Orange</a>
+        <a href="#" class="button purple">Purple</a>
+        <a href="#">Link</a>
+      </p>
+      <h5>Inversed</h5>
+      <p style="margin-bottom: 20px">
+        <a href="#" class="button inverse primary">Primary</a>
+        <a href="#" class="button inverse secondary">Secondary</a>
+        <a href="#" class="button inverse info">Info</a>
+        <a href="#" class="button inverse success">Success</a>
+        <a href="#" class="button inverse warning">Warning</a>
+        <a href="#" class="button inverse dark">Dark</a>
+        <a href="#" class="button inverse pink">Pink</a>
+        <a href="#" class="button inverse purple">Purple</a>
+        <a href="#" class="button inverse orange">Orange</a>
+        <a href="#" class="button inverse purple">Purple</a>
+      </p>
+      <h5>Style</h5>
+      <p style="margin-bottom: 20px">
+        No radius<br>
+        <a href="#" class="button no-radius">Button no-radius</a>  
+      </p>
+      <p style="margin-bottom: 20px">
+        is-block<br>
+        <a href="#" class="button is-block">Button is-block</a>
+      </p>
+      <h3 id="badges" style="margin-top: 40px"># Badges</h3>
+      <p>
+        <span class="badge primary">Primary</span>
+        <span class="badge secondary">Secondary</span>
+        <span class="badge info">Info</span>
+        <span class="badge success">Success</span>
+        <span class="badge warning">Warning</span>
+        <span class="badge dark">Dark</span>
+        <span class="badge pink">Pink</span>
+        <span class="badge purple">Purple</span>
+        <span class="badge orange">Orange</span>
+        <span class="badge purple">Purple</span>
+      </p>
+      <h3 id="text" style="margin-top: 40px"># Text</h3>
+      <p>Uppercase: <span class="text-uppercase">Quicquid ut iusque acervis saltem subditicii vox implacabilitati quod saltem.</span></p>
+      <p>Lowercase: <span class="text-lowercase">Quicquid ut iusque acervis saltem subditicii vox implacabilitati quod saltem.</span></p>
+      <p>Capitalize: <span class="text-capitalize">Quicquid ut iusque acervis saltem subditicii vox implacabilitati quod saltem.</span></p>
+      <p>Center: <span class="text-center">Quicquid ut iusque acervis saltem subditicii vox implacabilitati quod saltem.</span></p>
+      <p class="text-right">Right: Quicquid ut iusque acervis saltem subditicii vox implacabilitati quod saltem.</p>
+      <h3 id="images" style="margin-top: 40px"># Images</h3>
+      <div class="row" style="margin-bottom: 30px">
+        <div class="medium-col-4 text-center">
+          <h5>Circle</h5>
+          <img src="images/matthew.png" style="width: 200px" class="circle">
+        </div>
+        <div class="medium-col-4 text-center">
+          <h5>Thumb</h5>
+          <img src="images/matthew.png" style="width: 200px" class="thumb">
+        </div>
+        <div class="medium-col-4 text-center">
+          <h5>Rounded</h5>
+          <img src="images/matthew.png" style="width: 200px" class="rounded">
+        </div>
       </div>
-      <div class="medium-col-3 text-center" style="background-color: #22313F; border: 1px solid #F03434">
-        <p style="color: #fff">Column</p>
-      </div>
-      <div class="medium-col-3 text-center" style="background-color: #22313F; border: 1px solid #F03434">
-        <p style="color: #fff">Column</p>
-      </div>
-      <div class="medium-col-3 text-center" style="background-color: #22313F; border: 1px solid #F03434">
-        <p style="color: #fff">Column</p>
-      </div>
+      <h2 id="components" style="margin-bottom: 30px">Components</h2>
+      <h3 id="grid_system" style="margin-bottom: 20px"># Grid system</h>
+      <div class="row">
+        <div class="medium-col-12 text-center" style="background-color: #95a5a6; border: 1px solid #2c3e50; padding: 10px">
+          <p style="color: #fff">Medium column 12</p>
+        </div>
+        <div class="medium-col-6 text-center" style="background-color: #95a5a6; border: 1px solid #2c3e50; padding: 10px">
+          <p style="color: #fff">Medium column 6</p>
+        </div>
+        <div class="medium-col-6 text-center" style="background-color: #95a5a6; border: 1px solid #2c3e50; padding: 10px">
+          <p style="color: #fff">Medium column 6</p>
+        </div>
+        <div class="medium-col-3 text-center" style="background-color: #95a5a6; border: 1px solid #2c3e50; padding: 10px">
+          <p style="color: #fff">Medium column 3</p>
+        </div>
+        <div class="medium-col-3 text-center" style="background-color: #95a5a6; border: 1px solid #2c3e50; padding: 10px">
+          <p style="color: #fff">Medium column 3</p>
+        </div>
+        <div class="medium-col-3 text-center" style="background-color: #95a5a6; border: 1px solid #2c3e50; padding: 10px">
+          <p style="color: #fff">Medium column 3</p>
+        </div>
+        <div class="medium-col-3 text-center" style="background-color: #95a5a6; border: 1px solid #2c3e50; padding: 10px">
+          <p style="color: #fff">Medium column 3</p>
+        </div>
+      </div>     
     </div>
   </body>
 </html>

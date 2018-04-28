@@ -2,6 +2,15 @@ img {
   display: inline-block;
 
   &.circle {
-    border-radius: 100%;
+    @include border-radius(100%);
+  }
+
+  &.rounded {
+    @include border-radius($image-rounded-border-radius);
+  }
+
+  &.thumb {
+    padding: $image-thumb-padding;
+    border: $image-thumb-border-size solid $image-thumb-border-color;
   }
 }

@@ -111,6 +111,12 @@ $badge-font-weight:     700 !default;
 $badge-min-height:      10px !default;
 $badge-border-radius:   .125rem !default;
 
+// Image
+$image-rounded-border-radius:   5px;
+$image-thumb-padding:           10px;
+$image-thumb-border-size:       1px;
+$image-thumb-border-color:      $gray-300;
+
 /* ==========
   Compoments
 ========== */
