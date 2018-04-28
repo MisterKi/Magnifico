@@ -1,0 +1,42 @@
+
+
+@mixin breakpoint($prefix: ''){
+  @for $i from 0 through $columns {
+    @if $i != 0 {
+      .#{$prefix}col-#{$i}{
+        @include flex($i / $columns * 100%);
+        max-width: $i / $columns * 100%;
+      }
+
+      .#{$prefix}order-#{$i} {
+        @include column-order($i);
+      }
+    }
+    
+    .#{$prefix}offset-#{$i} {
+      margin-left: $i / $columns * 100%;
+    }
+  }
+
+  .#{$prefix}col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  .#{$prefix}col-auto {
+    @include flex(auto);
+    width: auto;
+    max-width: none;
+  }
+
+  .#{$prefix}order-first {
+    @include column-order(-1);
+  }
+
+  .#{$prefix}order-last {
+    @include column-order(13);
+  }
+}

@@ -1,0 +1,64 @@
+.button {
+  display: inline-block;
+  padding: $button-padding-y $button-padding-x;
+  font-size: $button-font-size;
+  font-weight: $button-font-weight;
+  color: $button-color;
+  background-color: $button-bg-color;
+  border: $button-border-size solid $button-border-color;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  @include border-radius($button-border-radius);
+  @include user-select(none);
+
+  &:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: $button-hover-color;
+    background-color: $button-hover-bg-color;
+  }
+
+  &:focus,
+  &.focus {
+    outline: 0;
+  }
+
+  &.is-block {
+    display: block;
+    width: 100%;
+  }
+
+  &.no-radius {
+    @include border-radius(0);
+  }
+
+  @each $type, $color in $colors {
+    &.#{$type} {
+      background-color: $color;
+      border-color: $color;
+
+      &:hover {
+        background-color: lighten($color, 5);        
+        border-color: lighten($color, 5);        
+      }
+
+      &.inverse {
+        color: $color;
+        border-color: $color;
+        background-color: $white;
+
+        &:hover {
+          color: $white;
+          background-color: $color;
+        }
+
+        &:focus {
+          color: $white;
+          background-color: lighten($color, 50);
+          border-color: $color;
+        }
+      }
+    }
+  }
+}

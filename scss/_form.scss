@@ -1,0 +1,39 @@
+input[type="checkbox"], input[type="radio"] {
+  height: 1.25em;
+  width: 1.25em;
+  margin-right: 5px;
+  vertical-align: top;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.form-group {
+  margin-bottom: $form-group-margin-bottom;
+
+  &.checkbox {
+    color: $gray-600;
+    font-size: 1.1875rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  font-size: $form-control-font-size;
+  font-weight: $form-control-font-weight;
+  line-height: $form-control-line-height;
+  padding: $form-control-padding-y $form-control-padding-x;
+  color: $form-control-color;
+  background-color: $form-control-bg-color;
+  border: $form-control-border-width solid $form-control-border-color;
+  @include border-radius($form-control-border-radius);
+
+  &:focus {
+    outline: 0;
+    border-color: $form-control-focus-border-color;
+  }
+}

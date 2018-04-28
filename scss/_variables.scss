@@ -1,0 +1,175 @@
+/* =============
+  Colors  Group
+============= */
+// Gray
+$white:    #ffffff !default;
+$gray-100: #f5f5f5 !default;
+$gray-200: #eeeeee !default;
+$gray-300: #e0e0e0 !default;
+$gray-400: #bdbdbd !default;
+$gray-500: #9e9e9e !default;
+$gray-600: #757575 !default;
+$gray-700: #616161 !default;
+$gray-800: #424242 !default;
+$gray-900: #212121 !default;
+$black:    #000000 !default;
+
+// Colors
+$primary:  #3498db !default;
+$secondary:#bdc3c7 !default;
+$info:     #4cc5fe !default;
+$success:  #2ecc71 !default;
+$warning:  #f7ca18 !default;
+$danger:   #e74c3c !default;
+$dark:     #2c3e50 !default;
+$pink:     #d2527f !default;
+$purple:   #8e44ad !default;
+$orange:   #f89406 !default;
+$link:       $white  !default;
+
+$colors: () !default;
+$colors: map-merge((
+  "primary":   $primary,
+  "secondary": $secondary,
+  "info":      $info,
+  "success":   $success,
+  "warning":   $warning,
+  "danger":    $danger,
+  "dark":      $dark,
+  "pink":      $pink,
+  "purple":    $purple,
+  "orange":    $orange
+), $colors);
+
+/* =============
+  HTML Elements
+============= */
+// Body
+$font-family:   -apple-system, BlinkMacSystemFont, "Sofia Pro", "Circlar Std", "Montserrat", "Roboto Mono", Arial, sans-serif, "Apple Color Emoji" !default;
+$font-size:     1rem !default;
+$font-weight:   400 !default;
+$line-height:   1.5 !default;
+$body-color:    $gray-900 !default;
+$body-bg:       $white !default;
+
+// Headings
+$headings-margin-bottom:  .55rem !default;
+$headings-font-family:    inherit !default;
+$headings-font-weight:    700 !default;
+$headings-line-height:    1.2 !default;
+$headings-color:          $gray-900 !default;
+$h1-font-size:            2rem !default;
+$h2-font-size:            1.8rem !default;
+$h3-font-size:            1.6rem !default;
+$h4-font-size:            1.4rem !default;
+$h5-font-size:            1.2rem !default;
+$h6-font-size:            1rem !default;
+
+// Horizontal rule
+$hr-margin-y:       .5rem !default;
+$hr-border-width:   1px !default;
+$hr-border-color:   $gray-400 !default;
+
+// Paragraph
+$paragraph-margin-bottom:  .5rem !default;
+$paragraph-font-family:    inherit !default;
+$paragraph-font-size:      1rem !default;
+$paragraph-font-weight:    400 !default;
+$paragraph-line-height:    1.5 !default;
+$paragraph-color:          $gray-900 !default;
+
+// Link
+$link-color:              $primary !default;
+$link-decoration:         none !default;
+$link-hover-color:        lighten($link-color, 5) !default;
+$link-hover-decoration:   none !default;
+
+/* ========
+  Elements
+======== */
+// Button
+$button-font-size:        .875rem !default;
+$button-font-weight:      400 !default;
+$button-padding-y:        .375rem !default;
+$button-padding-x:        .75rem !default;
+$button-bg-color:         $gray-500 !default;
+$button-color:            $white !default;
+$button-border-size:      1px !default;
+$button-border-color:     transparent !default;
+$button-border-radius:    .125rem !default;
+$button-hover-color:      lighten($button-color, 5) !default;
+$button-hover-bg-color:   lighten($button-bg-color, 5) !default;
+
+// Badge
+$badge-color:           $white !default;
+$badge-bg-color:        $gray-500 !default;
+$badge-line-height:     1 !default;
+$badge-padding-x:       .4375rem !default;
+$badge-padding-y:       .1875rem !default;
+$badge-font-size:       12px !default;
+$badge-font-weight:     700 !default;
+$badge-min-height:      10px !default;
+$badge-border-radius:   .125rem !default;
+
+/* ==========
+  Compoments
+========== */
+// Form
+$form-control-padding-y:            6px !default;
+$form-control-padding-x:            .9375rem !default;
+$form-control-font-size:            1rem !default;
+$form-control-font-weight:          300 !default;
+$form-control-line-height:          1.5rem !default;
+$form-control-color:                $gray-800 !default;
+$form-control-bg-color:             transparent !default;
+$form-control-border-width:         1px !default;
+$form-control-border-color:         $gray-400 !default;
+$form-control-border-radius:        .125rem !default;
+$form-control-focus-border-color:   $info !default;
+$form-group-margin-bottom:          16px !default;
+
+// Blockquote
+$blockquote-color:                $gray-900 !default;
+$blockquote-bg-color:             $white !default;
+$blockquote-border:               1px !default;
+$blockquote-border-left:          .3125rem !default;
+$blockquote-border-color:         $gray-200 !default;
+$blockquote-border-radius:        .25rem !default;
+$blockquote-border-left-color:    $gray-400 !default;
+$blockquote-padding-x:            1.25rem !default;
+$blockquote-padding-y:            1.5rem !default;
+$blockquote-title-font-size:      1.5rem !default;
+$blockquote-subtitle-font-size:   1.2rem !default;
+$blockquote-font-size:            1rem !default;
+
+// Panel
+$panel-color:               $white !default;
+$panel-bg-color:            $gray-500 !default;
+$panel-font-size:           1rem !default;
+$panel-padding-y:           .375rem !default;
+$panel-padding-x:           .625rem !default;
+$panel-border-radius:       4px !default;
+$panel-body-padding:        1.25rem !default;
+$panel-body-olor:           $gray-500 !default;
+$panel-body-font-size:      16px !default;
+$panel-body-border-size:    1px !default;
+$panel-body-border-color:   $gray-500 !default;
+
+// Grids system
+$columns:           12 !default;
+$gutter:            20px !default;
+$grid-min-height:   1px !default;
+$mini:              375px !default;
+$small:             425px !default;
+$medium:            768px !default;
+$big:               1024px !default;
+$huge:              1440px !default;
+
+$prefixs: () !default;
+$prefixs: map-merge((
+  "mini-":    $mini,
+  "small-":   $small,
+  "medium-":  $medium,
+  "big-":     $big,
+  "huge-":    $huge
+), $prefixs);

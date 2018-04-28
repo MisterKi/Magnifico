@@ -1,0 +1,20 @@
+// Grid
+@mixin column-order($value){
+  -ms-flex-order: $value;
+  order: $value;
+}
+
+@mixin flex($value){
+  -ms-flex: 0 0 $value;
+  flex: 0 0 $value;
+}
+
+@mixin grid-padding($value){
+  padding-right: $value;
+  padding-left: $value;
+}
+
+@mixin grid-margin($value: auto){
+  margin-right: $value;
+  margin-left: $value;
+}

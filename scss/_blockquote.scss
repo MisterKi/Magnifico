@@ -1,0 +1,28 @@
+blockquote, .blockquote {
+  color: $blockquote-color;
+  background-color: $blockquote-bg-color;
+  padding: $blockquote-padding-y $blockquote-padding-x;
+  border: $blockquote-border solid $blockquote-border-color;
+  border-left-width: $blockquote-border-left;
+  border-left-color: $blockquote-border-left-color;
+  border-radius: $blockquote-border-radius;
+  font-size: $blockquote-font-size;
+
+  .title {
+    font-size: $blockquote-title-font-size;
+  }
+
+  .subtitle {
+    font-size: $blockquote-subtitle-font-size;
+  }
+
+  @each $type, $color in $colors {
+    &.#{$type} {
+      border-left-color: $color;
+
+      .title {
+        color: $color;
+      }
+    }
+  }
+}

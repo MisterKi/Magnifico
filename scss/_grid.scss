@@ -1,0 +1,48 @@
+%columns {
+  position: relative;
+  width: 100%;
+  min-height: $grid-min-height;
+  @include grid-padding($gutter / 2);
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  @include grid-margin(-($gutter / 2));
+}
+
+.container {
+  width: 100%;
+  @include grid-padding($gutter / 2);
+  @include grid-margin();
+}
+
+.container-fluid {
+  width: 100%;
+  @include grid-padding($gutter / 2);
+  @include grid-margin();
+}
+
+@for $i from 1 through $columns {
+  @each $prefix, $width in $prefixs {
+    .#{$prefix}col-#{$i}, .col-#{$i} {
+      @extend %columns;
+    }
+  }
+}
+
+@each $prefix, $width in $prefixs {
+  @media (min-width: $width) {
+    .container {
+      max-width: $width - ($gutter / 2);
+    }
+  }
+}
+
+@each $prefix, $width in $prefixs {
+  @media (min-width: $width){
+    @include breakpoint($prefix);
+  }
+}
